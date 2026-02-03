@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Create assets directory
+      - name: GitHub Space Shooter
         run: mkdir -p assets
-      - uses: czl9707/gh-space-shooter@v1
+        uses: czl9707/gh-space-shooter@v1.0.1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           output-path: assets/space-shooter.gif
           strategy: random
+
+  
